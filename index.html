@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>收藏页面 - 人人</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="box">
+	<div class="logo">
+		<img src="1.gif" width="100">
+	</div>
+	<div class="tip">
+		<small>
+		<div class="ipinfo">
+			<b id="cip"></b><span id="cname"></span>
+		<h2><div>
+			稍等片刻
+		</div></h2>
+		<h2><div>
+			系统正在自动为您分配最新的官网地址
+		</div></h2>
+		<hr>
+		<div><h4>
+			进度条如果不动并非卡顿<b>而是在加载数据</b>
+	</h4>	</div>
+		</small>
+	</div>
+	
+	<div class="progress">
+		<div id="progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+		</div>
+	</div>
+</div>
+	</div>
+<script>
+var url='https://v.rrren.com/user';
+function progress(p){document.getElementById("progress-bar").style.width=p+"%"}
+setTimeout(function(){progress("5");setTimeout(function(){progress("60");setTimeout(function(){progress("95");window.location.href=url;},600);},800);},300);
+</script>
+</body>
+</html>
